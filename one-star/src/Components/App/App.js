@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import firebase from './firebase.js';
+import firebase from './../../firebase.js';
+import Header from './../Header/Header.js';
+import Login from './../Login/Login.js';
+import Register from './../Register/Register.js';
+import { Route, NavLink, Link } from 'react-router-dom';
+import Search from './../Search/Search.js';
+import Profile from './../Profile/Profile.js';
 
 class App extends Component {
   constructor() {
@@ -57,12 +62,18 @@ class App extends Component {
     return (
       <div className='app'>
         <header>
-            <div className="wrapper">
-              <h1>Fun Food Friends</h1>
+          <Route exact path='/search' component={Search} />
+          <Route exact path='/profile' component={Profile} />
 
+            <div>
+              <Header/>
             </div>
         </header>
         <div className='container'>
+          <div>
+            <Login />
+            <Register />
+          </div>
           <section className='add-item'>
                 <form onSubmit={this.handleSubmit}>
                   <input type="text" name="username" placeholder="What's your name?" onChange={this.handleChange} value={this.state.username} />
