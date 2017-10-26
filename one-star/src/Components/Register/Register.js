@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import css from './Register.css';
 
 class Register extends Component {
   constructor() {
@@ -12,7 +13,7 @@ class Register extends Component {
 
   render() {
   return (
-    <div>
+    <div className="Register-Container">
       <h3>REGISTER</h3>
       <input placeholder="name" />
       <input placeholder="email" />

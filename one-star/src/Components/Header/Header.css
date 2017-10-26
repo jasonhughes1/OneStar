@@ -1,0 +1,12 @@
+.header-section {
+  display: flex;
+  justify-content: space-around;
+  background-color: #38686A
+}
+
+.nav {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 20px;
+}
