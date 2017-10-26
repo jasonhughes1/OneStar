@@ -6,8 +6,6 @@ const Search = () => {
 
   return (
     <header>
-
-    <NavLink to='/search' className='search-link'> Quick Search! </NavLink>
     <h2>This is the search component</h2>
   </header>
   )

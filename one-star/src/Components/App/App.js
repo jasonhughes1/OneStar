@@ -14,7 +14,10 @@ class App extends Component {
     this.state = {
       currentItem: '',
       username: '',
-      items: []
+      items: [],
+      user: {
+          email: ''
+      }
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -58,22 +61,14 @@ class App extends Component {
     const itemRef = firebase.database().ref(`/items/${itemId}`);
     itemRef.remove();
   }
+
   render() {
     return (
       <div className='app'>
-        <header>
-          <Route exact path='/search' component={Search} />
-          <Route exact path='/profile' component={Profile} />
-
-            <div>
-              <Header/>
-            </div>
-        </header>
-        <div className='container'>
-          <div>
-            <Login />
-            <Register />
-          </div>
+        <Route path='/' component={Header} />
+        <Route exact path='/login' component={Login} />
+        <Route exact path='/register' component={Register} />
+        {/* <div className='container'>
           <section className='add-item'>
                 <form onSubmit={this.handleSubmit}>
                   <input type="text" name="username" placeholder="What's your name?" onChange={this.handleChange} value={this.state.username} />
@@ -97,7 +92,7 @@ class App extends Component {
                 </ul>
               </div>
           </section>
-        </div>
+        </div> */}
       </div>
     );
   }
