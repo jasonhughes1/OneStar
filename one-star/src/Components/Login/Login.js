@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import firebase from './../../firebase';
 import css from './Login.css';
+import { Route, NavLink, Link } from 'react-router-dom';
 
 
 class Login extends Component {
@@ -21,7 +22,6 @@ signIn() {
   }
 
 
-
 updateState(key, value) {
   console.log(key, value);
   this.setState({
@@ -36,6 +36,7 @@ render() {
       <input onChange={(e) => this.updateState('email', e.target.value)} placeholder="email" />
       <input onChange={(e) => this.updateState('password', e.target.value)} placeholder="password"/>
       <button onClick={() => this.signIn()}>Submit</button>
+      <NavLink to='/' className='nav'>Return To Homepage</NavLink>
     </div>
     )
   }

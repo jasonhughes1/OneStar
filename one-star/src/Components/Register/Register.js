@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import css from './Register.css';
+import { Route, NavLink, Link } from 'react-router-dom';
 
 class Register extends Component {
   constructor() {
@@ -19,6 +20,7 @@ class Register extends Component {
       <input placeholder="email" />
       <input placeholder="password"/>
       <button>Submit</button>
+      <NavLink to='/' className='nav'>Return To Homepage</NavLink>
     </div>
   )
 }
