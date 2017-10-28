@@ -7,6 +7,7 @@ import RegisterContainer from '../containers/RegisterContainer';
 import SearchResultsContainer from '../containers/SearchResultsContainer';
 
 class App extends Component {
+
   render() {
     return (
       <div className="App">

@@ -35,9 +35,23 @@
   background-size: contain; }
 
 .one-star {
+  width: 50%;
   color: white;
   font-size: 120px;
   font-weight: bold; }
+
+.nav {
+  font-size: 30px;
+  color: white;
+  margin: 10px auto 10px auto; }
+
+.link-container {
+  float: right;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 200px;
+  width: 50%; }
 
 .search-results {
   width: 100%;
@@ -62,6 +76,9 @@
   background-color: #5a93c7;
   height: 900px; }
 
+.homepage-title {
+  margin: 40px auto 40px auto; }
+
 .login {
   background-color: #236494;
   height: 900px; }
@@ -73,6 +90,6 @@
 
 body {
   font-family: 'Patua One';
-  margin: 0;
-  padding: 0;
+  margin: auto;
+  padding: auto;
   font-family: sans-serif; }

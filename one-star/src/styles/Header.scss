@@ -12,7 +12,23 @@
 }
 
 .one-star {
+  width: 50%;
   color: white;
   font-size: 120px;
   font-weight: bold;
+}
+
+.nav {
+  font-size: 30px;
+  color: white;
+  margin: 10px auto 10px auto;
+}
+
+.link-container {
+  float: right;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 200px;
+  width: 50%;
 }
