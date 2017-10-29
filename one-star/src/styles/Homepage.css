@@ -1,9 +1,10 @@
 .homepage {
-  background-color: #5a93c7;
+  background-image: url("http://www.52dazhew.com/data/out/253/587715930-yosemite-national-park-desktop-wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
   height: 900px; }
 
 .homepage-title {
-  margin: 40px auto 40px auto;
   color: white; }
 
 .search-input {

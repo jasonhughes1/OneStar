@@ -16,7 +16,7 @@ export const register = (email, password) => {
         id: response.uid,
         email: response.email
       }))))
-      .catch(error => alert('Email already exists, please login or choose a different email address.'))
+      .catch(error => alert('Email and password not valid'))
   };
 };
 
@@ -46,12 +46,6 @@ export const searchAll = searchResults => {
   };
 };
 
-export const generateReview = review => {
-  return {
-    type: 'GENERATE_REVIEW',
-    review
-  };
-};
 
 export const searchReviews = (newReviews) => {
   return (dispatch) => {

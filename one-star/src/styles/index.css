@@ -24,21 +24,23 @@
     transform: rotate(360deg); } }
 
 .header {
+  margin: 0;
   width: 100%;
   height: 250px;
-  background-color: #afcce1;
+  background-color: #021D4F;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 50px;
-  background-image: url("https://img00.deviantart.net/495f/i/2012/261/7/6/star_wallpaper_by_roweig-d5f77yi.jpg");
-  background-size: contain; }
+  align-items: center; }
 
 .one-star {
   width: 50%;
   color: white;
   font-size: 100px;
   font-weight: bold; }
+
+.star-image {
+  height: 120px;
+  width: 20%; }
 
 .nav {
   font-size: 30px;
@@ -73,11 +75,12 @@
   border: 2px solid black; }
 
 .homepage {
-  background-color: #5a93c7;
+  background-image: url("http://www.52dazhew.com/data/out/253/587715930-yosemite-national-park-desktop-wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
   height: 900px; }
 
 .homepage-title {
-  margin: 40px auto 40px auto;
   color: white; }
 
 .search-input {
@@ -91,7 +94,9 @@
   border-radius: 25px; }
 
 .login {
-  background-color: #236494;
+  background-image: url("http://www.52dazhew.com/data/out/228/587472499-ut-desktop-wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
   height: 900px; }
 
 .login-text {
@@ -109,7 +114,9 @@
 
 .create-account {
   color: white;
-  background-color: #0A4E87;
+  background-image: url("https://wallpaperstock.net/wallpapers/thumbs1/48570wide.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
   height: 900px; }
 
 .inputs {
