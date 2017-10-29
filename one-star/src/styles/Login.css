@@ -1,3 +1,16 @@
 .login {
   background-color: #236494;
   height: 900px; }
+
+.login-text {
+  color: white; }
+
+.inputs {
+  width: 15%;
+  height: 30px;
+  border-radius: 25px; }
+
+.login-button {
+  width: 5%;
+  height: 30px;
+  border-radius: 25px; }

@@ -29,10 +29,10 @@ class Register extends Component {
     return (
       <div className='create-account'>
         <h1>Don't have an account? Register here!</h1>
-        <input placeholder="name" onChange={(event) => this.handleChange('name', event) }></input>
-        <input placeholder="email" onChange={(event) => this.handleChange('email', event) }></input>
-        <input placeholder="password" onChange={(event) => this.handleChange('password', event) }></input>
-        <button onClick={ () => this.createNewUser()}>submit</button>
+        <input className='inputs' placeholder="name" onChange={(event) => this.handleChange('name', event) }></input>
+        <input className='inputs' placeholder="email" onChange={(event) => this.handleChange('email', event) }></input>
+        <input className='inputs' placeholder="password" onChange={(event) => this.handleChange('password', event) }></input>
+        <button className='register-button' onClick={ () => this.createNewUser()}>submit</button>
       </div>
     );
   }

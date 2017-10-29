@@ -28,9 +28,9 @@ class Homepage extends Component {
     return (
       <div className='homepage'>
         <h1 className='homepage-title'>Homepage & Search Here</h1>
-        <input placeholder="Search" onChange= {(event ) => this.handleChange(event)}></input>
+        <input className='search-input' placeholder='Search' onChange= {(event ) => this.handleChange(event)}></input>
         <Link to='/searchresults'>
-          <button onClick={ () => this.searchClick() }>Go</button>
+          <button className='search-button' onClick={ () => this.searchClick() }>Go</button>
         </Link>
       </div>
     );

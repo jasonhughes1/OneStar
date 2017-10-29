@@ -53,7 +53,7 @@ export const generateReview = review => {
   };
 };
 
-export const fetchReview = (newReviews) => {
+export const searchReviews = (newReviews) => {
   return (dispatch) => {
     fetch('https://cors-anywhere.herokuapp.com/http://api.yelp.com/v3/businesses/north-india-restaurant-san-francisco', {
       method: 'GET',
