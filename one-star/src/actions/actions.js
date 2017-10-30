@@ -1,5 +1,5 @@
 import firebase, { auth, provider } from '../firebase.js';
-// import apikey from '../apikey.js'
+import apikey from './../apiKey.js';
 
 export const handleRegister = (user) => {
   return {
@@ -16,11 +16,11 @@ export const register = (email, password) => {
         id: response.uid,
         email: response.email
       }))))
-      .catch(error => console.log(error))
+      .catch(error => alert('Email and password not valid'))
   };
 };
 
-export const handleLogin = user => {
+export const handleLogin = (user) => {
   return {
     type: 'LOGIN',
     user
@@ -45,3 +45,20 @@ export const searchAll = searchResults => {
     searchResults
   };
 };
+
+
+
+export const searchReviews = () => {
+  debugger;
+  const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+  const targetUrl = 'http://api.yelp.com/v3/businesses/north-india-restaurant-san-francisco';
+
+  fetch(proxyUrl + targetUrl, {
+    method: 'GET',
+    headers: {
+      "authorization": "Bearer 6zk1vjZX2-OTB4N284fqInN4CP53m8hQnN8OeLDFrlzg8VkeuxEAAb2jpZVBqloXy9JTVzbaYdEKzbApuqbqRSpzPSNuEFPoKSzrEpyZntbr0YQwRxzN-M2MaR3yWXYx",
+    },
+    }).then(response => response.json())
+      .then((parsedResponse) => (searchAll(console.log(parsedResponse))))
+      .catch(err => alert('the fetch didnt work'))
+  }

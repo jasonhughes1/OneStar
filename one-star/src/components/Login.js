@@ -25,10 +25,10 @@ class Login extends Component {
   render() {
     return (
       <div className='login'>
-        <h1>Login Here</h1>
-        <input placeholder="email" onChange={(event) => this.handleChange('email', event) }></input>
-        <input placeholder="password" onChange={(event) => this.handleChange('password', event) }></input>
-        <button onClick={ () => this.userLogin()}>submit</button>
+        <h1 className='login-text'>Login Here</h1>
+        <input className='inputs' placeholder="email" onChange={(event) => this.handleChange('email', event) }></input>
+        <input className='inputs' placeholder="password" onChange={(event) => this.handleChange('password', event) }></input>
+        <button className='login-button' onClick={ () => this.userLogin()}>submit</button>
       </div>
     );
   }

@@ -1,5 +1,21 @@
 .create-account {
   color: white;
-  background-color: #0A4E87;
+  // background-color: #0A4E87;
+  background-image: url("https://wallpaperstock.net/wallpapers/thumbs1/48570wide.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 900px;
+}
+
+.inputs {
+  width: 15%;
+  height: 30px;
+  border-radius: 25px;
+}
+
+.register-button {
+  width: 5%;
+  height: 30px;
+  border-radius: 25px;
+  cursor: pointer;
 }

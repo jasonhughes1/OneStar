@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-
-class Homepage extends Component {
+class Homepage extends Component<HomepageState, Props> {
   constructor() {
     super();
     this.state = {
@@ -17,29 +16,21 @@ class Homepage extends Component {
     });
   }
 
-  searchClick() {
-    const { searchAll } = this.props;
-    searchAll(this.state.searchValue);
-  }
-
-
-
   render() {
     return (
       <div className='homepage'>
-        <h1>Homepage & Search Here</h1>
-        <input placeholder="Search" onChange= {(event ) => this.handleChange(event)}></input>
+        <h1 className='homepage-title'>Homepage & Search Here</h1>
+        <input className='search-input' placeholder='Search' onChange= {(event ) => this.handleChange(event)}></input>
         <Link to='/searchresults'>
-          <button onClick={ () => this.searchClick() }>Go</button>
+        <button className='search-button' onClick={ () => this.props.searchReviews() }>Go</button>
         </Link>
       </div>
     );
-
   }
 }
 
 Homepage.propTypes = {
-  searchAll: PropTypes.func
+  searchReviews: PropTypes.func
 };
 
 export default Homepage;

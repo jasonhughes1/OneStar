@@ -1,16 +1,18 @@
-.create-account {
-  color: white;
-  background-image: url("https://wallpaperstock.net/wallpapers/thumbs1/48570wide.jpg");
+.homepage {
+  background-image: url("http://www.52dazhew.com/data/out/253/587715930-yosemite-national-park-desktop-wallpaper.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 900px; }
 
-.inputs {
+.homepage-title {
+  color: white; }
+
+.search-input {
   width: 15%;
   height: 30px;
   border-radius: 25px; }
 
-.register-button {
+.search-button {
   width: 5%;
   height: 30px;
   border-radius: 25px;

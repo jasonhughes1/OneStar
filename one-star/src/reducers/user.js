@@ -1,8 +1,8 @@
 const user = (state = {}, action) => {
   switch (action.type) {
-  case 'CREATE_ACCOUNT_SUCCESS':
+  case 'REGISTER':
     return action.user;
-  case 'LOGIN_SUCCESS':
+  case 'LOGIN':
     return action.user;
   default:
     return state;

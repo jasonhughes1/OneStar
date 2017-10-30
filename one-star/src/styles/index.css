@@ -24,22 +24,39 @@
     transform: rotate(360deg); } }
 
 .header {
+  margin: 0;
   width: 100%;
-  height: 200px;
-  background-color: #afcce1;
+  height: 250px;
+  background-color: #021D4F;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 50px;
-  background-image: url("https://img00.deviantart.net/495f/i/2012/261/7/6/star_wallpaper_by_roweig-d5f77yi.jpg");
-  background-size: contain; }
+  align-items: center; }
 
 .one-star {
+  width: 50%;
   color: white;
-  font-size: 120px;
+  font-size: 100px;
   font-weight: bold; }
 
+.star-image {
+  height: 120px;
+  width: 20%; }
+
+.nav {
+  font-size: 30px;
+  color: white;
+  margin: 10px auto 10px auto; }
+
+.link-container {
+  float: right;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 200px;
+  width: 50%; }
+
 .search-results {
+  background-image: url("https://images4.alphacoders.com/663/663219.jpg");
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -59,20 +76,65 @@
   border: 2px solid black; }
 
 .homepage {
-  background-color: #5a93c7;
+  background-image: url("http://www.52dazhew.com/data/out/253/587715930-yosemite-national-park-desktop-wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 900px; }
 
+.homepage-title {
+  color: white; }
+
+.search-input {
+  width: 15%;
+  height: 30px;
+  border-radius: 25px; }
+
+.search-button {
+  width: 5%;
+  height: 30px;
+  border-radius: 25px;
+  cursor: pointer; }
+
 .login {
-  background-color: #236494;
+  background-image: url("http://www.52dazhew.com/data/out/228/587472499-ut-desktop-wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 900px; }
+
+.login-text {
+  color: white; }
+
+.inputs {
+  width: 15%;
+  height: 30px;
+  border-radius: 25px; }
+
+.login-button {
+  width: 5%;
+  height: 30px;
+  border-radius: 25px;
+  cursor: pointer; }
 
 .create-account {
   color: white;
-  background-color: #0A4E87;
+  background-image: url("https://wallpaperstock.net/wallpapers/thumbs1/48570wide.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 900px; }
+
+.inputs {
+  width: 15%;
+  height: 30px;
+  border-radius: 25px; }
+
+.register-button {
+  width: 5%;
+  height: 30px;
+  border-radius: 25px;
+  cursor: pointer; }
 
 body {
   font-family: 'Patua One';
-  margin: 0;
-  padding: 0;
+  margin: auto;
+  padding: auto;
   font-family: sans-serif; }
