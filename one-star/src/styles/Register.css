@@ -2,7 +2,7 @@
   color: white;
   background-image: url("https://wallpaperstock.net/wallpapers/thumbs1/48570wide.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   height: 900px; }
 
 .inputs {
@@ -13,4 +13,5 @@
 .register-button {
   width: 5%;
   height: 30px;
-  border-radius: 25px; }
+  border-radius: 25px;
+  cursor: pointer; }

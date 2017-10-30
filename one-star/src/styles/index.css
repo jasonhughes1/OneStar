@@ -56,6 +56,7 @@
   width: 50%; }
 
 .search-results {
+  background-image: url("https://images4.alphacoders.com/663/663219.jpg");
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -77,7 +78,7 @@
 .homepage {
   background-image: url("http://www.52dazhew.com/data/out/253/587715930-yosemite-national-park-desktop-wallpaper.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   height: 900px; }
 
 .homepage-title {
@@ -91,12 +92,13 @@
 .search-button {
   width: 5%;
   height: 30px;
-  border-radius: 25px; }
+  border-radius: 25px;
+  cursor: pointer; }
 
 .login {
   background-image: url("http://www.52dazhew.com/data/out/228/587472499-ut-desktop-wallpaper.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   height: 900px; }
 
 .login-text {
@@ -110,13 +112,14 @@
 .login-button {
   width: 5%;
   height: 30px;
-  border-radius: 25px; }
+  border-radius: 25px;
+  cursor: pointer; }
 
 .create-account {
   color: white;
   background-image: url("https://wallpaperstock.net/wallpapers/thumbs1/48570wide.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   height: 900px; }
 
 .inputs {
@@ -127,7 +130,8 @@
 .register-button {
   width: 5%;
   height: 30px;
-  border-radius: 25px; }
+  border-radius: 25px;
+  cursor: pointer; }
 
 body {
   font-family: 'Patua One';

@@ -2,7 +2,7 @@
   // background-color: #5a93c7;
   background-image: url("http://www.52dazhew.com/data/out/253/587715930-yosemite-national-park-desktop-wallpaper.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   height: 900px;
 }
 
@@ -14,10 +14,12 @@
   width: 15%;
   height: 30px;
   border-radius: 25px;
+
 }
 
 .search-button {
   width: 5%;
   height: 30px;
   border-radius: 25px;
+  cursor: pointer;
 }
