@@ -22,7 +22,7 @@ class Homepage extends Component<HomepageState, Props> {
         <h1 className='homepage-title'>Homepage & Search Here</h1>
         <input className='search-input' placeholder='Search' onChange= {(event ) => this.handleChange(event)}></input>
         <Link to='/searchresults'>
-        <button className='search-button' onClick={ () => this.props.searchReviews() }>Go</button>
+        <button className='search-button' onClick={ () => this.props.searchAll() }>Go</button>
         </Link>
       </div>
     );
