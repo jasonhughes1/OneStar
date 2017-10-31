@@ -8,7 +8,9 @@ const mapStateToProps = store => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  searchReviews: searchReviews
+  searchAll: (searchResults) => {
+    dispatch(searchReviews(searchResults))
+  }
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Homepage);
