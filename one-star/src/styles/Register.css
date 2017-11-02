@@ -1,6 +1,6 @@
 .create-account {
   color: white;
-  background-image: url("https://wallpaperstock.net/wallpapers/thumbs1/48570wide.jpg");
+  background-image: url("http://localhost:3000/images/kc-luk-188412.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 900px; }
@@ -15,3 +15,9 @@
   height: 30px;
   border-radius: 25px;
   cursor: pointer; }
+
+.register-title {
+  color: yellow;
+  margin: 0px;
+  padding-top: 100px;
+  padding-bottom: 20px; }

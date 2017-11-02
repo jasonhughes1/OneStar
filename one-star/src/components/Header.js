@@ -3,7 +3,10 @@ import PropTypes from 'prop-types';
 import { Link, NavLink } from 'react-router-dom';
 
 const Header = (props) => {
+console.log('props in header:', props)
   const { logout } = props
+  // const userName = props.user ? props.user : null
+  const showName = props.user ? <h2 className="welcome-email">Welcome, {props.user}</h2> : <h2 className="login-here"></h2>
   return (
     <div className='header'>
       <h1 className='one-star'>ONE STAR<span>
@@ -13,19 +16,11 @@ const Header = (props) => {
       <NavLink to='/register' className='nav'>Click To Register</NavLink>
       <NavLink to='/' className='nav'>Homepage</NavLink>
     </div>
-    {/* {!props.user &&
-      <div>
-        <h3>login or search to continue</h3>
-      </div>
-    }
     {
-      props.user &&
-        <div className="logged-in-user">
-          <h3 className="welcome-user">Hello,
-            <span>{props.user}</span></h3>
-        </div>
-    } */}
-    </div>
+      showName
+    }
+  </div>
+
   );
 };
 

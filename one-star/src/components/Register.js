@@ -28,7 +28,7 @@ class Register extends Component {
   render() {
     return (
       <div className='create-account'>
-        <h1>Don't have an account? Register here!</h1>
+        <h1 className='register-title'>Don't have an account? Register here!</h1>
         <input className='inputs' placeholder="name" onChange={(event) => this.handleChange('name', event) }></input>
         <input className='inputs' placeholder="email" onChange={(event) => this.handleChange('email', event) }></input>
         <input className='inputs' placeholder="password" onChange={(event) => this.handleChange('password', event) }></input>

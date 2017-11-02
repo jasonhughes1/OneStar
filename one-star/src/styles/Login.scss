@@ -1,13 +1,16 @@
 .login {
   // background-color: #236494;
-  background-image: url("http://www.52dazhew.com/data/out/228/587472499-ut-desktop-wallpaper.jpg");
+  background-image:url("http://localhost:3000/images/matteo-catanese-401213.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 900px;
 }
 
 .login-text {
-    color: white;
+    color: black;
+    margin: 0px;
+    padding-top: 100px;
+    padding-bottom: 20px;
 }
 
 .inputs {

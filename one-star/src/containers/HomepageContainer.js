@@ -8,8 +8,8 @@ const mapStateToProps = store => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  searchAll: (searchResults) => {
-    dispatch(searchReviews(searchResults))
+  searchAll: (searchResults, location) => {
+    dispatch(searchReviews(searchResults, location))
   }
 });
 
