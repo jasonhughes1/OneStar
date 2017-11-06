@@ -7,7 +7,7 @@ class Homepage extends Component<HomepageState, Props> {
     super();
     this.state = {
       searchValue: '',
-      location: 'CO'
+      location: 'AL'
     };
   }
 
