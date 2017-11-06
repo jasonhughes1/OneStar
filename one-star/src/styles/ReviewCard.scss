@@ -1,8 +1,11 @@
 .review-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   flex-wrap: wrap;
   background-color: #FEEA8F;
   width: 400px;
-  height: 200px;
+  // height: 200px;
   border: 2px solid black;
   margin: 20px auto 20px auto;
   cursor: pointer;
@@ -41,4 +44,22 @@
 .rating {
   color: #031F4E;
   font-size: 12px;
+}
+
+.reviews-button {
+  height: 40px;
+  width: 25%;
+  color: white;
+  background-color: black;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.reviews-button:hover {
+  background-color: grey;
+}
+
+.card-image {
+  height: 200px;
+  width: 80%;
 }

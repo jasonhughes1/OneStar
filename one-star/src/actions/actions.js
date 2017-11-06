@@ -35,6 +35,7 @@ export const handleLogin = (user) => {
   };
 };
 
+
 export const login = (email, password) => {
   return dispatch => {
     firebase.auth().signInWithEmailAndPassword(email, password)
@@ -45,6 +46,16 @@ export const login = (email, password) => {
       .catch(error => alert('Email and password not found, please try again!'));
   };
 };
+
+
+export const logout = () => {
+  return dispatch => {
+    firebase.auth().signOut()
+      .then(response => dispatch(handleLogin({})))
+      .catch(error => alert(error.message));
+  };
+};
+
 
 export const searchAll = searchResults => {
   console.log('results in action ', searchResults);
@@ -60,19 +71,19 @@ export const searchAll = searchResults => {
     return dispatch => {
     const proxyUrl = 'https://galvanize-cors-proxy.herokuapp.com/';
     const targetUrl = `https://api.yelp.com/v3/businesses/search?term=${business}&location=${location}`;
-    // console.log('location: ', location);
+
     fetch(proxyUrl + targetUrl, {
       method: 'GET',
       headers: {
         "authorization": "Bearer 6zk1vjZX2-OTB4N284fqInN4CP53m8hQnN8OeLDFrlzg8VkeuxEAAb2jpZVBqloXy9JTVzbaYdEKzbApuqbqRSpzPSNuEFPoKSzrEpyZntbr0YQwRxzN-M2MaR3yWXYx",
       },
     }).then(response => response.json())
-      // .then(response => console.log("response: ", response.businesses))
+    //   .then(response => console.log("response: ", response.businesses))
         .then(response => dispatch(searchAll(response.businesses)))
         .catch(err => alert('search reviews catch'))
 
-    }
-  }
+    };
+  };
 //   export const reviewsList = () => {
 //     return dispatch => {
 //   const proxyUrl = 'https://galvanize-cors-proxy.herokuapp.com/';
