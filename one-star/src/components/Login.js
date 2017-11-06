@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 
 class Login extends Component {
   constructor() {
@@ -20,6 +20,12 @@ class Login extends Component {
   userLogin() {
     const { login } = this.props;
     login(this.state.email, this.state.password);
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if(nextProps.user !== this.props.user) {
+      this.props.history.push('/')
+    }
   }
 
   render() {
