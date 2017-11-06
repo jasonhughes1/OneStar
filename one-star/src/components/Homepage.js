@@ -34,6 +34,7 @@ class Homepage extends Component<HomepageState, Props> {
               <option value = "AR">Arkansas</option>
               <option value = "CA">California</option>
               <option value = "CT">Connecticut</option>
+              <option value = "CO">Colorado</option>
               <option value = "DE">Delaware</option>
               <option value = "FL">Florida</option>
               <option value = "GA">Georgia</option>

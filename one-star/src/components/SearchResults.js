@@ -11,7 +11,7 @@ const SearchResults = ({ searchResults }) => {
 
   return (
     <div className='search-results'>
-      <h1>Results from Search</h1>
+      {/* <h1>Results from Search</h1> */}
 
         {/* {searchResults[0].reviews.length ? searchResults[0].reviews.map(review => <ReviewCard review={review} key={Date.now()}/>) : "no review here"} */}
         {searchResults.length ? searchResults.map(review => <ReviewCard review={review} key={review.time_created}/>) : <div>"no review here"</div>}

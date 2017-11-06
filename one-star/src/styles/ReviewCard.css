@@ -1,12 +1,31 @@
 .review-card {
+  flex-wrap: wrap;
   background-color: #FEEA8F;
   width: 400px;
   height: 200px;
   border: 2px solid black;
-  margin: 20px auto 20px auto; }
+  margin: 20px auto 20px auto;
+  cursor: pointer; }
 
-.review-text {
-  color: #031F4E; }
+.review-card:hover {
+  background-color: yellow; }
 
-.review-rating {
-  color: #FFFD38; }
+.text {
+  color: #031F4E;
+  font-size: 24px; }
+
+.location {
+  color: #031F4E;
+  font-size: 20px; }
+
+.city {
+  color: #031F4E;
+  font-size: 16px; }
+
+.state {
+  color: #031F4E;
+  font-size: 14px; }
+
+.rating {
+  color: #031F4E;
+  font-size: 12px; }
