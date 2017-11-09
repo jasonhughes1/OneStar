@@ -24,7 +24,11 @@ class Register extends Component {
     register(this.state.email, this.state.password);
   }
 
-
+  // componentWillReceiveProps(nextProps) {
+  //   if(nextProps.user !== this.props.user) {
+  //     this.props.history.push('/')
+  //   }
+  // }
   render() {
     return (
       <div className='create-account'>

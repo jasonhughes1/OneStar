@@ -7,7 +7,7 @@ const SearchResults = ({ searchResults }) => {
 
   return (
     <div className='search-results'>
-        {searchResults.length ? searchResults.map(review => <ReviewCard review={review} key={review.time_created}/>) : <div>"no review here"</div>}
+        {searchResults.length ? searchResults.map(review => <ReviewCard review={review} key={review.id}/>) : <div>"no review here"</div>}
     </div>
   );
 };

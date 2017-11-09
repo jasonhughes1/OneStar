@@ -15,16 +15,16 @@ export const setCurrentUser = (user) => {
   };
 };
 
-export const register = (email, password) => {
+export const register = (email, password, name) => {
   return dispatch => {
     firebase.auth().createUserWithEmailAndPassword(email, password)
-
       .then(response => dispatch(handleRegister(Object.assign({}, {
         id: response.uid,
-        email: response.email
+        email: response.email,
+        name: name
       }))))
-      .catch(error => console.log('error ', error))
-      // .catch(error => dispatch(error))
+      // .catch(error => console.log('error ', error))
+      .catch(error => alert(error));
   };
 };
 
@@ -43,7 +43,7 @@ export const login = (email, password) => {
         id: response.uid,
         email: response.email
       }))))
-      .catch(error => alert('Email and password not found, please try again!'));
+      .catch(error => alert(error));
   };
 };
 
@@ -66,9 +66,9 @@ export const searchAll = searchResults => {
 };
 
 
-  export const searchReviews = (business, location) => {
+export const searchReviews = (business, location) => {
 
-    return dispatch => {
+  return dispatch => {
     const proxyUrl = 'https://galvanize-cors-proxy.herokuapp.com/';
     const targetUrl = `https://api.yelp.com/v3/businesses/search?term=${business}&location=${location}`;
 
@@ -79,8 +79,11 @@ export const searchAll = searchResults => {
       },
     }).then(response => response.json())
     //   .then(response => console.log("response: ", response.businesses))
-        .then(response => dispatch(searchAll(response.businesses)))
-        .catch(err => alert('search reviews catch'))
+    .then(response => {
+
+      console.log(response);
+      dispatch(searchAll(response.businesses))})
+      .catch(err => alert('search reviews catch'))
 
     };
   };
